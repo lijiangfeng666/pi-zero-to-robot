@@ -15,11 +15,11 @@
 - [烧录系统](#烧录系统)
 - [连接树莓派](#连接树莓派)
 - [安装依赖](#安装依赖)
-- config.py / .env.example
-- voice.py
-- netease.py / music_player.py
-- intent_parser.py / executor.py
-- main.py
+- [配置与密钥](config.py) — config.py / .env.example
+- [语音识别与合成](voice.py) — voice.py
+- [音乐服务](netease.py) — netease.py / music_player.py
+- [指令系统](intent_parser.py) — intent_parser.py / executor.py
+- [主程序](main.py) — main.py
 - [日常使用](#日常使用)
 - [故障排查](#故障排查)
 
