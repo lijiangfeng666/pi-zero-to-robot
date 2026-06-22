@@ -776,7 +776,8 @@ systemctl --user status robot.service
 | 参数 | 默认值 | 作用 |
 |------|--------|------|
 | `WAKE_WORD` | 土豆 | 唤醒词，可改成你喜欢的 |
-| `VAD_THRESHOLD` | 800 | 麦克风灵敏度，越小越灵敏（音乐时自动翻倍）|
+| `VAD_THRESHOLD` | 2500 | 麦克风灵敏度，越小越灵敏 |
+| `MIC_GAIN` | 3000 | 麦克风增益，越大越灵敏 |
 | `VOLUME` | 1.0 | 默认音量（0.0~1.0） |
 | `WAKE_RECORD_SECONDS` | 1.5 | 唤醒后录音时长（秒） |
 | `RECORD_SECONDS` | 2.0 | 普通指令录音时长（秒） |
