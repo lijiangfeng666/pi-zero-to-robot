@@ -746,6 +746,8 @@ journalctl --user -u robot.service -n 20 --no-pager
 
 ### 快速自检命令
 
+**✅ 以下命令一键检查机器人状态：**
+
 ```bash
 echo "=== 文件 ===" && ls ~/robot/*.py 2>&1 | wc -l && echo "个.py" && echo "=== 麦克风 ===" && arecord -l 2>&1 | head -2 && echo "=== 内存 ===" && free -h | grep Mem && echo "=== 服务 ===" && systemctl --user is-active robot.service 2>/dev/null || echo "未配置"
 ```
