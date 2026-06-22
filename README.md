@@ -15,11 +15,11 @@
 - [第三步：烧录系统](#)
 - [第四步：连接树莓派](#)
 - [第五步：安装依赖](#)
-- [第六步：配置与密钥](config.py) — config.py / .env.example
-- [第七步：语音识别与合成](voice.py) — voice.py
-- [第八步：音乐服务](netease.py) — netease.py / music_player.py
-- [第九步：指令系统](intent_parser.py) — intent_parser.py / executor.py
-- [第十步：主程序](main.py) — main.py
+- [第六步：配置与密钥](https://github.com/lijiangfeng666/pi-zero-to-robot/blob/main/config.py) — config.py / .env.example
+- [第七步：语音识别与合成](https://github.com/lijiangfeng666/pi-zero-to-robot/blob/main/voice.py) — voice.py
+- [第八步：音乐服务](https://github.com/lijiangfeng666/pi-zero-to-robot/blob/main/netease.py) — netease.py / music_player.py
+- [第九步：指令系统](https://github.com/lijiangfeng666/pi-zero-to-robot/blob/main/intent_parser.py) — intent_parser.py / executor.py
+- [第十步：主程序](https://github.com/lijiangfeng666/pi-zero-to-robot/blob/main/main.py) — main.py
 - [日常使用](#)
 - [故障排查](#)
 
