@@ -22,7 +22,6 @@
 - [main.py](#mainpy--主程序与机器人启动) — 主程序与机器人启动
 - [日常使用](#日常使用)
 - [故障排查](#故障排查)
-- [项目结构](#项目结构)
 
 ---
 
@@ -830,30 +829,6 @@ journalctl --user -u robot.service -n 20 --no-pager
 
 ```bash
 echo "=== 文件 ===" && ls ~/robot/*.py 2>&1 | wc -l && echo "个.py" && echo "=== 麦克风 ===" && arecord -l 2>&1 | head -2 && echo "=== 内存 ===" && free -h | grep Mem && echo "=== 服务 ===" && systemctl --user is-active robot.service 2>/dev/null || echo "未配置"
-```
-
----
-
-## 项目结构
-
-### 软件架构
-
-```
-麦克风 → voice.py(STT) → main.py(唤醒检测) → intent_parser.py(DeepSeek)
-                                                        ↓
-音箱 ← voice.py(TTS)  ← executor.py(执行)    ← 结构化指令 JSON
-                            ↓
-                    ┌── music_player.py → mpg123 → 音箱
-                    ├── netease.py → 网易云 API → 歌曲 URL
-                    └── (后续可扩展天气/闹钟等)
-```
-
-### 音频链路
-
-```
-歌曲下载 → mpg123 播放器 → PipeWire 混音 → USB 音箱 发出声音
-                           ↓
-                    可在播放中调音量（不影响系统其他声音）
 ```
 
 ---
