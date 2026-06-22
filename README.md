@@ -836,33 +836,6 @@ echo "=== 文件 ===" && ls ~/robot/*.py 2>&1 | wc -l && echo "个.py" && echo "
 
 ## 项目结构
 
-```
-pi-zero-to-robot/
-├── main.py              # 主程序（唤醒 + 指令分发）
-├── config.py            # 配置（从 .env 读取）
-├── voice.py             # 百度语音识别/合成
-├── music_player.py      # 音乐播放控制（mpg123 + PipeWire）
-├── netease.py           # 网易云音乐 API 客户端
-├── executor.py          # 指令执行器
-├── intent_parser.py     # DeepSeek 意图解析
-├── .env.example         # API Key 模板（复制为 .env 并填入 Key）
-├── .gitignore
-├── LICENSE
-└── README.md
-```
-
-### 各模块职责
-
-| 文件 | 干什么的 |
-|------|---------|
-| `main.py` | 主循环：检测声音 → 识别 → 理解 → 执行 |
-| `config.py` | 从 `.env` 读取 API Key 和运行参数 |
-| `voice.py` | 百度语音 SDK 封装：录音 → 文字（STT），文字 → 语音（TTS）|
-| `netease.py` | 网易云音乐 API 搜索/歌词/歌曲 URL 获取 |
-| `music_player.py` | 音乐播放控制：播放/暂停/切歌/音量（基于 mpg123 + PipeWire）|
-| `intent_parser.py` | 调用 DeepSeek 把自然语言转为结构化指令 |
-| `executor.py` | 根据指令类型调用对应模块 |
-
 ### 软件架构
 
 ```
