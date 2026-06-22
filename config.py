@@ -20,20 +20,20 @@ DEEPSEEK_KEY = os.getenv("DEEPSEEK_KEY", "")
 # Microphone
 MIC_INDEX = -1
 
-# Wake word
-WAKE_WORD = "土豆"
+# Wake word (optional in .env)
+WAKE_WORD = os.getenv("WAKE_WORD", "土豆")
 
 # NetEase API
-NETEASE_API_BASE = "http://127.0.0.1:3000"
+NETEASE_API_BASE = os.getenv("NETEASE_API_BASE", "http://127.0.0.1:3000")
 
-# Volume (0.0 ~ 1.0)
-VOLUME = 1.0
+# Volume (0.0 ~ 1.0, optional in .env)
+VOLUME = float(os.getenv("VOLUME", "1.0"))
 
-# Recording params
-RECORD_SECONDS = 2.0
-WAKE_RECORD_SECONDS = 1.5
-COMMAND_TIMEOUT = 4
+# Recording params (optional in .env)
+RECORD_SECONDS = float(os.getenv("RECORD_SECONDS", "2.0"))
+WAKE_RECORD_SECONDS = float(os.getenv("WAKE_RECORD_SECONDS", "1.5"))
+COMMAND_TIMEOUT = int(os.getenv("COMMAND_TIMEOUT", "4"))
 
-# VAD
-VAD_THRESHOLD = 2500
-MIC_GAIN = 3000
+# VAD (optional in .env)
+VAD_THRESHOLD = int(os.getenv("VAD_THRESHOLD", "2500"))
+MIC_GAIN = int(os.getenv("MIC_GAIN", "3000"))
