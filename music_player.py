@@ -7,7 +7,7 @@
 使用前需安装：
   sudo apt install mpg123
 
-交互规则见：Obsidian → 12 - 交互规则 → 音乐播放
+交互规则见：项目 README
 """
 import os
 import subprocess
