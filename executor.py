@@ -13,6 +13,8 @@
 
 """
 
+import os
+
 # weather 模块在 _do_weather_query 中按需导入，不影响其他功能
 
 
